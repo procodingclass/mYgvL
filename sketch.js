@@ -18,6 +18,10 @@ var bgPosY = 235;
 
 var gameState = "initial";
 
+//declare var score and starsCount here
+
+
+
 var points = [
   { x: 400, y: 200, isAttached: true },
   { x: 600, y: 100, isAttached: false },
@@ -66,6 +70,8 @@ function draw() {
 
   handlePoints();
   handleStars();
+  // call scoreBoard() here
+
 
   addPoints();
   addStars();
@@ -142,6 +148,9 @@ function handlePoints() {
       
       sling.attach(points[i], player.body);
       points[i].isAttached = true;
+      // increase score here
+
+
     }
 
     if (points[i].x < 60) {
@@ -162,6 +171,15 @@ function handleStars() {
     if (stars[i].x < 60) {
       stars.shift();
     }
+    // check overlap of stars and player here
+
+    // if overlapped, increase score, increase starsCount , delete star from array
+
+
+
+
+
+
   }
 }
 
@@ -176,4 +194,13 @@ function resetBackground() {
     bgPosX = 425;
   }
 }
+
+
+// define function scoreBoard() here
+
+
+
+
+
+
 
