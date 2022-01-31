@@ -171,7 +171,7 @@ function handleStars() {
       stars.shift();
     }
     // checking overlap of stars and player here
-    var startsCollected = player.overlap(stars[i].x, stars[i].y, 30,30);
+    var starsCollected = player.overlap(stars[i].x, stars[i].y, 30,30);
     // if overlapped, increase score, increase starsCount , delete star from array
 
 
